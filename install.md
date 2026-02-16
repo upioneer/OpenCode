@@ -38,3 +38,11 @@ Extensions > Search > Install
 Extension ID `sst-dev.opencode`
 
 Extension link: https://marketplace.visualstudio.com/items?itemName=sst-dev.opencode
+
+# Uninstall
+
+```PowerShell
+taskkill /f /im opencode.exe
+taskkill /f /im node.exe
+npm uninstall -g opencode-ai
+```
