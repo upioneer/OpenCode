@@ -46,3 +46,8 @@ taskkill /f /im opencode.exe
 taskkill /f /im node.exe
 npm uninstall -g opencode-ai
 ```
+
+Clear npm cache
+```PowerShell
+npm cache clean --force
+```
