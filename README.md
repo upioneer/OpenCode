@@ -42,4 +42,17 @@ Quick reference for your development sessions:
 
 ---
 
+Re-auth Google Account / Troubleshoot
+
+```powershell
+npm install -g opencode-antigravity-auth@latest
+```
+
+```powershell
+Remove-Item -Recurse -Force "$env:LOCALAPPDATA\opencode" -ErrorAction SilentlyContinue
+Remove-Item -Recurse -Force "$HOME\.cache\opencode" -ErrorAction SilentlyContinue
+Remove-Item "$env:USERPROFILE\.config\opencode\antigravity-accounts.json" -ErrorAction SilentlyContinue
+```
+
+---
 *Maintainer: Jasen Henry*
