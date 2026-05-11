@@ -42,16 +42,23 @@ Quick reference for your development sessions:
 
 ---
 
-Re-auth Google Account / Troubleshoot
+## Re-auth Google Account / Troubleshoot
 
+Install Antigravity update
 ```powershell
 npm install -g opencode-antigravity-auth@latest
 ```
 
+Clear cache (if necessary)
 ```powershell
 Remove-Item -Recurse -Force "$env:LOCALAPPDATA\opencode" -ErrorAction SilentlyContinue
 Remove-Item -Recurse -Force "$HOME\.cache\opencode" -ErrorAction SilentlyContinue
 Remove-Item "$env:USERPROFILE\.config\opencode\antigravity-accounts.json" -ErrorAction SilentlyContinue
+```
+
+Test
+```cmd
+opencode run "Is my account working?" --model=google/antigravity-gemini-3-pro
 ```
 
 ---
